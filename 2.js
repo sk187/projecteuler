@@ -3,7 +3,8 @@ function genFibonacci(num){
 	var nextFibNum = 0;
 
 	while(fibArray[fibArray.length-1]< num){
-		nextFibNum = fibArray[fibArray.length-2] + fibArray[fibArray.length-1];
+		nextFibNum = fibArray[fibArray.length-2] + 
+		fibArray[fibArray.length-1];
 		fibArray.push(nextFibNum);
 		i++;
 	};
@@ -33,7 +34,7 @@ function sumEvenFib(evenFibArray){
 	return sum
 };
 
-var fibArray = genFibonacci(10);
+var fibArray = genFibonacci(4000000);
 var evenFibArray = genEvenFib(fibArray);
 var sum = sumEvenFib(evenFibArray);
 sum
